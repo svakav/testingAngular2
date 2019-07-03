@@ -29,7 +29,8 @@ module.exports = function (config) {
 	customLaunchers: {
         ChromeNoSandbox: {
           base: 'Chrome',
-          flags: ['--no-sandbox']
+          flags: ['--no-sandbox',
+				 '--disable-gpu',]
         }
     },
     singleRun: false,
